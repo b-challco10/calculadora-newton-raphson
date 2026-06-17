@@ -11,7 +11,7 @@ export default function TermsPage() {
     <div className="max-w-4xl mx-auto px-4 py-12">
       <Card className="p-8">
         <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-6">
-          📋 Términos y Condiciones
+          Términos y Condiciones
         </h1>
         
         <div className="space-y-6 text-gray-700 dark:text-gray-300">
@@ -83,18 +83,6 @@ export default function TermsPage() {
             <p>
               Nos reservamos el derecho de modificar estos términos en cualquier
               momento. Los cambios entrarán en vigor al ser publicados.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-              6. Contacto
-            </h2>
-            <p>
-              Para preguntas sobre estos términos, contáctanos en{' '}
-              <a href="/contact" className="text-primary-600 hover:underline">
-                nuestra página de contacto
-              </a>.
             </p>
           </section>
 

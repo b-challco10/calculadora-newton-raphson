@@ -3,12 +3,21 @@ import { notFound } from 'next/navigation';
 import { Card } from '@/components/ui/Card';
 import Link from 'next/link';
 import { posts } from '../data/posts';
+import * as Icons from 'lucide-react';
 
 interface PageProps {
   params: {
     slug: string;
   };
 }
+
+// Mapeo de nombres de íconos a componentes
+const iconMap: Record<string, React.ElementType> = {
+  Calculator: Icons.Calculator,
+  History: Icons.History,
+  Microscope: Icons.Microscope,
+  FileText: Icons.FileText, // Fallback
+};
 
 export function generateStaticParams() {
   return posts.map((post) => ({
@@ -38,7 +47,9 @@ export default function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
-  // Convertir el contenido markdown a HTML (solución simple)
+  const IconComponent = iconMap[post.iconName] || Icons.FileText;
+
+  // Convertir el contenido markdown a HTML
   const formatContent = (content: string) => {
     return content
       .split('\n')
@@ -84,7 +95,10 @@ export default function BlogPostPage({ params }: PageProps) {
 
       <Card className="p-8">
         <div className="flex items-center gap-3 mb-4">
-          <span className="text-4xl">{post.emoji}</span>
+          {/* 👇 Ícono en lugar de emoji */}
+          <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl">
+            <IconComponent className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+          </div>
           <span className="text-xs bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full">
             {post.category}
           </span>

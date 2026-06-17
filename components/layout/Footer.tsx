@@ -32,7 +32,7 @@ export function Footer() {
                     href="/blog" 
                     className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                   >
-                    📝 Blog
+                  Blog
                   </Link>
                 </li>
                 <li>
@@ -40,7 +40,7 @@ export function Footer() {
                     href="/docs" 
                     className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                   >
-                    📖 Documentación
+                  Documentación
                   </Link>
                 </li>
                 <li>
@@ -48,7 +48,7 @@ export function Footer() {
                     href="/about" 
                     className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                   >
-                    ℹ️ Acerca de
+                    Acerca de
                   </Link>
                 </li>
               </ul>
@@ -57,7 +57,7 @@ export function Footer() {
             {/* Columna 3: Legal (NUEVO) */}
             <div>
               <h3 className="text-sm font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider mb-3">
-                ⚖️ Legal
+                Legal
               </h3>
               <ul className="space-y-2 text-sm">
                 <li>
@@ -65,7 +65,7 @@ export function Footer() {
                     href="/privacy" 
                     className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                   >
-                    🔒 Política de Privacidad
+                    Política de Privacidad
                   </Link>
                 </li>
                 <li>
@@ -73,7 +73,7 @@ export function Footer() {
                     href="/terms" 
                     className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                   >
-                    📋 Términos y Condiciones
+                    Términos y Condiciones
                   </Link>
                 </li>
                 <li>
@@ -90,12 +90,12 @@ export function Footer() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a 
-                    href="https://github.com/tu-usuario/newton-raphson-calculator" 
+                    href="https://github.com/b-challco10/calculadora-newton-raphson" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                   >
-                    💻 GitHub
+                    GitHub
                   </a>
                 </li>
               </ul>
@@ -106,7 +106,7 @@ export function Footer() {
           <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                © {currentYear} Newton-Raphson Calculator. Todos los derechos reservados.
+                © {currentYear} Newton-Raphson CalculatorBCT. Todos los derechos reservados.
               </p>
               <div className="flex items-center gap-4 text-xs">
                 <Link 

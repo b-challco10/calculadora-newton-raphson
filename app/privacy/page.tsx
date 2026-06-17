@@ -11,7 +11,7 @@ export default function PrivacyPage() {
     <div className="max-w-4xl mx-auto px-4 py-12">
       <Card className="p-8">
         <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-6">
-          🔒 Política de Privacidad
+          Política de Privacidad
         </h1>
         
         <div className="space-y-6 text-gray-700 dark:text-gray-300">
@@ -47,7 +47,7 @@ export default function PrivacyPage() {
               <li><strong>Datos de entrada:</strong> Las funciones que ingresas (solo para el cálculo)</li>
             </ul>
             <p className="mt-2 text-sm text-gray-500">
-              ⚠️ Importante: <strong>NO almacenamos</strong> tus datos de entrada.
+              Importante: <strong>NO almacenamos</strong> tus datos de entrada.
               Todos los cálculos se realizan localmente en tu navegador.
             </p>
           </section>
@@ -97,17 +97,7 @@ export default function PrivacyPage() {
             </p>
           </section>
 
-          <section>
-            <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-              6. Contacto
-            </h2>
-            <p>
-              Si tienes preguntas sobre esta política, contáctanos en:{' '}
-              <a href="/contact" className="text-primary-600 hover:underline">
-                nuestra página de contacto
-              </a>.
-            </p>
-          </section>
+
 
           <section className="pt-4 border-t border-gray-200 dark:border-gray-700">
             <p className="text-sm text-gray-500 dark:text-gray-400">

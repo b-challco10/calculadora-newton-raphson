@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { Card } from '@/components/ui/Card';
-
+import * as Icons from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Documentación - Newton-Raphson Calculator',
   description: 'Guía de uso de la calculadora Newton-Raphson',
@@ -11,13 +11,13 @@ export default function DocsPage() {
     <div className="max-w-4xl mx-auto px-4 py-12">
       <Card className="p-8">
         <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-6">
-          📚 Documentación
+          Documentación
         </h1>
         
         <div className="space-y-8 text-gray-700 dark:text-gray-300">
           <section>
             <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-              🎯 ¿Cómo usar la calculadora?
+              ¿Cómo usar la calculadora?
             </h2>
             
             <div className="space-y-4">
@@ -71,7 +71,7 @@ export default function DocsPage() {
 
           <section className="pt-6 border-t border-gray-200 dark:border-gray-700">
             <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-              💡 Ejemplos prácticos
+              Ejemplos prácticos
             </h2>
             
             <div className="space-y-4">
@@ -115,7 +115,7 @@ export default function DocsPage() {
 
           <section className="pt-6 border-t border-gray-200 dark:border-gray-700">
             <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-3">
-              ⚠️ Errores comunes
+              Errores comunes
             </h2>
             <ul className="list-disc list-inside space-y-2 ml-4 text-sm">
               <li>
