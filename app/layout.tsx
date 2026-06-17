@@ -1,16 +1,21 @@
 // app/layout.tsx
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { Header } from '@/components/layout/Header';
-import { Footer } from '@/components/layout/Footer';
-import Script from 'next/script'; // 👈 Importar Script de Next.js
-import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Script from "next/script";
+
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+
+import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: 'Newton-Raphson Calculator',
-  description: 'Calculadora interactiva del método de Newton-Raphson',
+  title: "Newton-Raphson Calculator",
+  description: "Calculadora interactiva del método de Newton-Raphson",
 };
 
 export default function RootLayout({
@@ -21,18 +26,22 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        <meta name="google-adsense-account" content="ca-pub-3770775034295435" />
+      </head>
 
+      <body className={`${inter.className} min-h-screen flex flex-col pt-16`}>
         <Script
+          id="adsense-script"
+          strategy="afterInteractive"
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3770775034295435"
           crossOrigin="anonymous"
         />
-      </head>
-      <body className={`${inter.className} min-h-screen flex flex-col pt-16`}>
+
         <Header />
-        <main className="flex-1">
-          {children}
-        </main>
+
+        <main className="flex-1">{children}</main>
+
         <Footer />
       </body>
     </html>
